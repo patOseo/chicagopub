@@ -1,0 +1,23 @@
+// Fonts
+@import "fonts";
+
+// Extras
+@import "slick/slick";
+@import "slick/slick-theme";
+@import "slick/slick-custom";
+
+// Admin
+@import "admin/header"; 
+
+// Layout
+@import "layout/body";
+@import "layout/header";
+@import "layout/header-panel";
+@import "layout/footer";
+
+// Elements
+@import "elements/link-hover";
+@import "elements/font-awesome";
+
+// Templates
+@import "templates/home";

@@ -1,0 +1,12 @@
+body {
+	@include media-breakpoint-up(sm) {
+		font-size: $font-size-lg;
+	}
+	
+	-webkit-font-smoothing: antialiased;
+
+
+	#full-width-page-wrapper {
+		line-height: 2;
+	}
+}

@@ -1,0 +1,44 @@
+.slick-dots {
+	li {
+		button:before {
+			font-size: 1.25rem;
+			color: $white;
+			opacity: 1;
+			transition: .1s;
+		}
+
+		&:hover {
+			button:before {
+				opacity: .75;
+			}
+		}
+
+		&.slick-active {
+			button:before {
+				color: $primary;
+			}
+		}
+	}
+}
+
+.slick-arrow {
+	z-index: 999;
+	&:before {
+		color: $primary;
+		font-size: 2rem;
+		transition: 0.2s;
+		z-index: 999;
+	}
+
+	&.slick-prev {
+		width: auto;
+		height: auto;
+		left: -2rem;
+	}
+
+	&.slick-next {
+		width: auto;
+		height: auto;
+		right: -2rem;
+	}
+}
