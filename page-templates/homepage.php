@@ -71,7 +71,7 @@ if ( is_front_page() ) {
 	<section class="section-menus" id="menu" uk-scrollspy="target: .row > div; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;" style="background-image: url('<?php the_field('menus_background'); ?>');">
 		<div class="overlay">
 			<div class="container">
-				<div class="row justify-content-md-center">
+				<div class="row justify-content-center">
 					<div class="col-md-12">
 						<h2 class="section-heading">Menus</h2>
 						<p>Click on a menu to view it.</p>
@@ -79,8 +79,8 @@ if ( is_front_page() ) {
 
 					<?php if(have_rows('menus')): ?>
 						<?php while(have_rows('menus')): the_row(); $icon = get_sub_field('menu_icon'); ?>
-							<div class="col-md-4 col-lg-3">
-								<div class="menu">
+							<div class="col-6 col-md-4 col-lg-3">
+								<div class="menu my-0 my-3">
 									<?php echo wp_get_attachment_image($icon, 'thumbnail', '', ["class" => "menu-icon"]);  ?>
 									<a href="<?php the_sub_field('menu_pdf'); ?>" target="_blank" rel="noopener,noreferrer,nofollow" class="btn btn-lg btn-block btn-primary stretched-link"><?php the_sub_field('menu_name'); ?></a>
 								</div>
