@@ -22,6 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
+<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 	
