@@ -25,11 +25,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<h3>Contact Us</h3>
-					<div class="footer-address"><?php the_field('address', 'option'); ?></div>
-					<p class="footer-email"><strong>Email: </strong><a class="link-underline" href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></p>
-					<p class="footer-phone"><strong>Phone: </strong><a class="link-underline" href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></p>
+					<div class="footer-address"><?php echo get_field('address', 'option'); ?></div>
+					<p class="footer-email"><strong>Email: </strong><a class="link-underline" href="mailto:<?php echo get_field('email', 'option'); ?>"><?php echo get_field('email', 'option'); ?></a></p>
+					<p class="footer-phone"><strong>Phone: </strong><a class="link-underline" href="tel:<?php echo get_field('phone_number', 'option'); ?>"><?php echo get_field('phone_number', 'option'); ?></a></p>
 					<br>
-					<?php the_field('additional_info', 'option'); ?>
+					<?php echo get_field('additional_info', 'option'); ?>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<h3>Hours</h3>
@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 	<div class="site-map">
-		<?php the_field('google_map', 'option'); ?>
+		<?php echo get_field('google_map', 'option'); ?>
 	</div>
 	<div class="copyright">
 		<div class="container">

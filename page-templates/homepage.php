@@ -21,7 +21,7 @@ if ( is_front_page() ) {
 <div class="wrapper" id="full-width-page-wrapper">
 
 	<?php if(have_rows('specials', 'option')): ?>
-		<section class="section-specials" id="specials" uk-scrollspy="target: .specials-slider .single-special, .slick-dots; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;" <?php if(get_field('specials_background', 'option')): ?>style="background-image:url('<?php the_field('specials_background', 'option'); ?>');"<?php endif; ?>>
+		<section class="section-specials" id="specials" uk-scrollspy="target: .specials-slider .single-special, .slick-dots; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;" <?php if(get_field('specials_background', 'option')): ?>style="background-image:url('<?php echo get_field('specials_background', 'option'); ?>');"<?php endif; ?>>
 			<div class="overlay">
 				<div class="container">
 					<div class="specials-slider">
@@ -53,8 +53,8 @@ if ( is_front_page() ) {
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<h2 class="about-heading"><?php the_field('about_heading'); ?></h2>
-					<p><?php the_field('about_text'); ?></p>
+					<h2 class="about-heading"><?php echo get_field('about_heading'); ?></h2>
+					<p><?php echo get_field('about_text'); ?></p>
 					<div style="display:none;"><?php the_content(); ?></div>
 				</div>
 				<div class="col-lg-6">
@@ -68,7 +68,7 @@ if ( is_front_page() ) {
 		</div>
 	</section>
 
-	<section class="section-menus" id="menu" uk-scrollspy="target: .row > div; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;" style="background-image: url('<?php the_field('menus_background'); ?>');">
+	<section class="section-menus" id="menu" uk-scrollspy="target: .row > div; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;" style="background-image: url('<?php echo get_field('menus_background'); ?>');">
 		<div class="overlay">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -110,13 +110,13 @@ if ( is_front_page() ) {
 			</div>
 			<div class="ubereats">
 				<p>See full menu on</p>
-				<a href="<?php the_field('ubereats', 'option'); ?>" target="_blank" rel="noopener,noreferrer,nofollow"><img src="/wp-content/themes/chicagopub/images/ubereats.png" alt="Order Chicago Pub on UberEats"></a>
+				<a href="<?php echo get_field('ubereats', 'option'); ?>" target="_blank" rel="noopener,noreferrer,nofollow"><img src="/wp-content/themes/chicagopub/images/ubereats.png" alt="Order Chicago Pub on UberEats"></a>
 			</div>
 		</div>
 	</section>
 <?php endif; ?>
 
-	<section class="section-billiards" id="billiards" uk-scrollspy="target: .section-heading, .row > div; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;" style="background-image:url('<?php the_field('billards_background');?>')">
+	<section class="section-billiards" id="billiards" uk-scrollspy="target: .section-heading, .row > div; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;" style="background-image:url('<?php echo get_field('billards_background');?>')">
 		<div class="overlay">
 			<div class="container">
 				<h2 class="section-heading">Billiards</h2>
@@ -126,7 +126,7 @@ if ( is_front_page() ) {
 						<?php if($billiards_img): echo wp_get_attachment_image($billiards_img, 'full'); endif; ?>
 					</div>
 					<div class="col-md-5">
-						<?php if(get_field('billiards_text')): ?><div class="billiards-text"><?php the_field('billiards_text'); ?><div><?php endif; ?>
+						<?php if(get_field('billiards_text')): ?><div class="billiards-text"><?php echo get_field('billiards_text'); ?><div><?php endif; ?>
 					</div>
 				</div>
 			</div>
