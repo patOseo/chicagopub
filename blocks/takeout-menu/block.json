@@ -1,0 +1,12 @@
+{
+    "name": "acf/takeout-menu",
+    "title": "Takeout Menu",
+    "description": "A custom block to display the takeout menu.",
+    "category": "custom-blocks",
+    "icon": "cart",
+    "keywords": ["takeout", "menu", "food"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-takeout-menu.php"
+    }
+}

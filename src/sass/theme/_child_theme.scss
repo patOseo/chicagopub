@@ -1,0 +1,34 @@
+// Fonts
+@import "fonts";
+
+// Extras
+@import "slick/slick";
+@import "slick/slick-theme";
+@import "slick/slick-custom";
+
+// Admin
+@import "admin/header"; 
+
+// Layout
+@import "layout/body";
+@import "layout/header";
+@import "layout/header-panel";
+@import "layout/footer";
+
+// Blocks
+@import 'blocks/gutenberg';
+@import 'blocks/takeout-menu';
+@import 'blocks/menus';
+@import 'blocks/specials';
+@import 'blocks/gallery';
+
+// Elements
+@import "elements/link-hover";
+@import "elements/font-awesome";
+@import "elements/sugar-calendar";
+
+// Templates
+@import "templates/home";
+
+// UIKit
+@import "uikit";

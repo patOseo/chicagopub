@@ -1,0 +1,157 @@
+{
+    "version": 3,
+    "settings": {
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "border": {
+			"radius": {
+				"default": "0.5rem",
+				"small": "0.25rem",
+				"medium": "0.5rem",
+				"large": "1rem",
+				"full": "9999px"
+			}
+		},
+        "typography": {
+            "fluid": true,
+            "defaultFontSizes": false,
+            "fontFamilies": [
+                {
+                    "fontFamily": "Open Sans",
+                    "name": "Open Sans",
+                    "slug": "open-sans"
+                },
+                {
+                    "fontFamily": "Binner",
+                    "name": "Binner",
+                    "slug": "binner"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "slug": "tiny",
+                    "name": "Tiny",
+                    "size": ".85rem"
+                },
+                {
+                    "slug": "xxsmall",
+                    "name": "XX-Small",
+                    "size": "1rem"
+                },
+                {
+                    "slug": "xsmall",
+                    "name": "X-Small",
+                    "size": "1.15rem"
+                },
+                {
+                    "slug": "small",
+                    "name": "Small",
+                    "size": "1.25rem"
+                },
+                {
+                    "slug": "medium",
+                    "name": "Medium",
+                    "size": "1.5rem"
+                },
+                {
+                    "slug": "large",
+                    "name": "Large",
+                    "size": "1.75rem"
+                },
+                {
+                    "slug": "x-large",
+                    "name": "X-Large",
+                    "size": "2rem"
+                },
+                {
+                    "slug": "xx-large",
+                    "name": "XX-Large",
+                    "size": "2.25rem"
+                },
+                {
+                    "slug": "xxx-large",
+                    "name": "XXX-Large",
+                    "size": "2.5rem"
+                },
+                {
+                    "slug": "jumbo",
+                    "name": "Jumbo",
+                    "size": "4rem"
+                }
+            ],
+            "fontWeight": true,
+            "lineHeight": true
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "dark",
+                    "color": "#040404",
+                    "name": "Dark"
+                },
+                {
+                    "slug": "offblack",
+                    "color": "#2D2D2D",
+                    "name": "Off Black"
+                },
+                {
+                    "slug": "grey",
+                    "color": "#7D7C7C",
+                    "name": "Grey"
+                },
+                {
+                    "slug": "lightgrey",
+                    "color": "#F7F7F7",
+                    "name": "Light Grey"
+                },
+                {
+                    "slug": "red",
+                    "color": "#920c0c",
+                    "name": "Red"
+                }, 
+                {
+                    "slug": "light",
+                    "color": "#FFFFFF",
+                    "name": "White"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1140px",
+            "wideSize": "1920px"
+        }
+    },
+    "styles": {
+		"blocks": {
+            "core/paragraph": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+            "core/list": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"core/button": {
+				"color": {
+					"background": "var(--wp--preset--color--red)",
+					"text": "var(--wp--preset--color--light)"
+				},
+				"border": {
+					"radius": "0px"
+				},
+                "spacing": {
+                    "padding": {
+                        "top": "0.75rem",
+                        "right": "2rem",
+                        "bottom": "0.75rem",
+                        "left": "2rem"
+                    }
+                }
+			}
+		}
+	}
+}

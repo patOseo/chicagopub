@@ -1,0 +1,12 @@
+{
+    "name": "acf/menus",
+    "title": "Menus",
+    "description": "A custom block to display the menus.",
+    "category": "custom-blocks",
+    "icon": "menu",
+    "keywords": ["menus", "food", "drinks"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-menus.php"
+    }
+}

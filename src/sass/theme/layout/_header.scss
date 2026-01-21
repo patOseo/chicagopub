@@ -1,0 +1,91 @@
+.navbar-brand {
+	font-family: $headings-font-family;
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+
+#wrapper-navbar {
+	z-index: 9999;
+}
+
+.navbar-expand-md {
+	.navbar-brand {
+		font-size: 1rem;
+
+		@include media-breakpoint-up(sm) {
+			font-size: 1.25rem;
+		}
+	}
+	.navbar-nav {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		.nav-item {
+			text-align: center;
+		}
+		.nav-link {
+			position: relative;
+			margin-bottom: 1rem;
+			margin-left: 1rem;
+			margin-right: 1rem;
+			padding: 0;
+			font-family: $headings-font-family;
+			font-size: 1.5rem;
+			color: $white;
+			transition: 0.2s;
+
+			@include media-breakpoint-up(md) {
+				font-size: 1rem;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-left: 1rem;
+				margin-right: 1rem;
+				margin-bottom: 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				margin-left: 1.5rem;
+				margin-right: 1.5rem;
+				font-size: 1.5rem;
+			}
+
+			&:before {
+				content: "";
+    			position: absolute;
+    			width: 100%;
+    			height: 3px;
+    			bottom: -2px;
+    			left: 0;
+    			background-color: #fff;
+    			visibility: hidden;
+    			-webkit-transform: scaleX(0);
+    			-ms-transform: scaleX(0);
+    			transform: scaleX(0);
+    			transition: all .2s ease-in-out 0s;
+			}
+
+			&:hover {
+				&:before {
+					visibility: visible;
+    				-webkit-transform: scaleX(1);
+    				-ms-transform: scaleX(1);
+    				transform: scaleX(1);
+				}
+			}
+		}
+
+		.uk-active {
+			.nav-link {
+				&:before {
+					@include media-breakpoint-up(md) {
+						visibility: visible;
+    					-webkit-transform: scaleX(1);
+    					-ms-transform: scaleX(1);
+    					transform: scaleX(1);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+{
+    "key": "group_69704f6940069",
+    "title": "Block – Specials",
+    "fields": [
+        {
+            "key": "field_69705b117cffb",
+            "label": "Specials",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To add or edit specials, visit the <a href=\"\/wp-admin\/admin.php?page=acf-options-specials\" target=\"_blank\">Specials<\/a> admin page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/specials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1768971136
+}

@@ -1,0 +1,12 @@
+{
+    "name": "acf/specials",
+    "title": "Specials",
+    "description": "A custom block to display the weekly specials.",
+    "category": "custom-blocks",
+    "icon": "star-filled",
+    "keywords": ["specials", "weekly", "offers"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-specials.php"
+    }
+}

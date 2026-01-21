@@ -1,0 +1,114 @@
+// Header Panel
+.header-panel {
+	position: relative;
+	height:calc(100vh - 84px);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media-breakpoint-up(lg) {
+		background-attachment: fixed;	
+	}
+
+	.header-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		font-family: $headings-font-family;
+	}
+
+	.header-logo {
+		animation-delay: 200ms;
+	}
+
+	.header-logo img {
+		width: 100%;
+		max-width: 60%;
+		transition: 0.2s;
+
+		@include media-breakpoint-up(sm) {
+			max-width: 80%;
+		}
+
+		@include media-breakpoint-up(md) {
+			max-width: 360px;
+			max-height: 30vh;
+			width: auto;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			max-width: 500px;
+			max-height: 40vh;
+			width: auto;
+		}
+	}
+
+	.header-heading {
+		margin: 1rem 0 0 0;
+		width: 100%;
+		font-size: 1rem;
+		color: $white;
+		text-align: center;
+		animation-delay: 300ms;
+
+		@include media-breakpoint-up(sm) {
+			font-size: 1.5rem;
+		}	
+
+		@include media-breakpoint-up(md) {
+			font-size: 2.5rem;
+		}
+	}
+
+	.header-contact {
+		animation-delay: 400ms;
+		font-family: $headings-font-family;
+		font-size: 1rem;
+
+		@include media-breakpoint-up(sm) {
+			font-size: 1.5rem;
+		}
+
+		a {
+			display: block;
+			color: $white;
+			transition: 0.2s;
+
+			&:before {
+				height: 2px;
+			}
+		}
+	}
+
+	.header-social {
+		animation-delay: 500ms;
+		margin-top: 1rem;
+		.fa-circle {
+			color: $primary;
+			transition: 0.2s;
+		}
+
+		.fa-stack:hover {
+			.fa-circle {
+				color: darken($primary, 5%);
+			}
+		}
+	}
+
+	.ubereats {
+		animation-delay: 600ms;
+		margin-top: 1rem;
+		p {
+			margin-bottom: 0;
+			font-family: $font-family-sans-serif;
+			color: $white;
+		}
+
+		@include media-breakpoint-down(sm) {
+			display: block;
+			margin: 0 auto;
+			max-width: 75%;
+		}
+	}
+}

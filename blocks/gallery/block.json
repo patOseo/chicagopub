@@ -1,0 +1,12 @@
+{
+    "name": "acf/chicagopub-gallery",
+    "title": "Chicago Pub Gallery",
+    "description": "A custom block to display the Chicago Pub Gallery.",
+    "category": "custom-blocks",
+    "icon": "images-alt",
+    "keywords": ["gallery", "photos", "images"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-gallery.php"
+    }
+}
